@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crawlbox.app - Build Powerful Web Crawlers with Ease</title>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+            rel="stylesheet"
+        />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+            body {
+                font-family: "Poppins", sans-serif;
+                background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            }
+            .glass {
+                background: rgba(255, 255, 255, 0.25);
+                box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+                backdrop-filter: blur(4px);
+                -webkit-backdrop-filter: blur(4px);
+                border-radius: 10px;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+            }
+            .logo-spin {
+                animation: spin 20s linear infinite;
+            }
+            @keyframes spin {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </head>
+    <body class="h-screen flex items-center justify-center p-4">
+        <div class="max-w-4xl w-full glass text-white p-8">
+            <div class="flex items-center mb-6">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 100 100"
+                    class="w-16 h-16 mr-4 logo-spin text-gray-700"
+                >
+                    <circle cx="20" cy="20" r="8" fill="currentColor" />
+                    <circle cx="80" cy="80" r="8" fill="currentColor" />
+                    <circle cx="80" cy="20" r="5" fill="currentColor" />
+                    <circle cx="20" cy="80" r="5" fill="currentColor" />
+                    <line
+                        x1="20"
+                        y1="20"
+                        x2="80"
+                        y2="80"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+                    <line
+                        x1="80"
+                        y1="20"
+                        x2="20"
+                        y2="80"
+                        stroke="currentColor"
+                        stroke-width="2"
+                    />
+                    <circle cx="50" cy="50" r="12" fill="currentColor" />
+                    <path
+                        d="M50 38 L35 23 M50 38 L65 23 M50 62 L35 77 M50 62 L65 77"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                    />
+                    <path
+                        d="M38 50 L23 40 M38 50 L23 60 M62 50 L77 40 M62 50 L77 60"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        fill="none"
+                    />
+                </svg>
+                <h1 class="text-4xl font-bold">Crawlbox.app</h1>
+            </div>
+            <p class="text-2xl font-semibold mb-4">
+                Empower Your Data Collection with AI-Driven Web Crawlers
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">
+                        Versatile Crawling
+                    </h2>
+                    <p>
+                        Build custom crawlers for any website. Whether you need
+                        browser-based rendering or lightning-fast HTTP requests,
+                        Crawlbox adapts to your needs.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">
+                        AI-Powered Extraction
+                    </h2>
+                    <p>
+                        Leverage cutting-edge AI to parse and extract
+                        information with unprecedented accuracy. Turn
+                        unstructured web data into actionable insights
+                        effortlessly.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">
+                        Infinite Scalability
+                    </h2>
+                    <p>
+                        From small projects to enterprise-level data harvesting,
+                        Crawlbox scales seamlessly. Handle millions of pages
+                        without breaking a sweat.
+                    </p>
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">
+                        User-Friendly Interface
+                    </h2>
+                    <p>
+                        No coding required. Our intuitive interface allows
+                        anyone to create sophisticated crawlers. Empower your
+                        entire team to gather web data efficiently.
+                    </p>
+                </div>
+            </div>
+
+            <p class="text-lg mb-6">
+                Whether you're a data scientist, market researcher, or business
+                analyst, Crawlbox.app provides the tools you need to collect web
+                data at scale. Join the web scraping revolution and unlock the
+                power of big data for your projects.
+            </p>
+
+            <form id="signup-form" class="flex flex-col sm:flex-row gap-4">
+                <input
+                    type="email"
+                    placeholder="Enter your email for early access"
+                    required
+                    class="flex-grow px-4 py-3 rounded bg-white bg-opacity-20 placeholder-white placeholder-opacity-70 focus:outline-none focus:ring-2 focus:ring-white text-lg"
+                />
+                <button
+                    type="submit"
+                    class="px-8 py-3 bg-white text-purple-700 rounded font-semibold hover:bg-opacity-90 transition duration-300 text-lg"
+                >
+                    Get Notified
+                </button>
+            </form>
+        </div>
+
+        <script>
+            document
+                .getElementById("signup-form")
+                .addEventListener("submit", function (e) {
+                    e.preventDefault();
+                    alert(
+                        "Thank you for your interest! We'll notify you when Crawlbox.app launches.",
+                    );
+                });
+        </script>
+    </body>
+</html>
