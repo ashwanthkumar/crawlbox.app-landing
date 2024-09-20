@@ -7,9 +7,27 @@
         <link
             href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
             rel="stylesheet"
+            media="print"
+            onload="this.media='all'"
         />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            media="print"
+            onload="this.media='all'"
+        />
+        <noscript>
+            <link
+                href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+                rel="stylesheet"
+                type="text/css"
+            />
+            <link
+                href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+                rel="stylesheet"
+            />
+        </noscript>
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
             body {
                 font-family: "Poppins", sans-serif;
                 background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
